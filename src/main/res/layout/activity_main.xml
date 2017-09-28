@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dannyyyy.b5clicks.MainActivity">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:onClick="startGame"
+            android:id="@+id/button" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:text="Start at "
+            android:textSize="60px"
+            android:layout_alignBaseline="@+id/origin"
+            android:layout_alignBottom="@+id/origin"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_marginStart="11dp"
+            android:id="@+id/textView4" />
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/origin"
+            android:height="60px"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignStart="@+id/topic" />
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:text="to get to "
+            android:id="@+id/textView2"
+            android:textSize="60px"
+            android:layout_alignTop="@+id/topic"
+            android:layout_alignStart="@+id/textView4" />
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:id="@+id/topic"
+            android:layout_marginTop="148dp"
+            android:height="60px"
+            android:layout_below="@+id/button"
+            android:layout_alignEnd="@+id/textView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip: type &quot;random&quot; for a random topic or goal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="31dp"
+            android:id="@+id/textView3" />
+</RelativeLayout>
